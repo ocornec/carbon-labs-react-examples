@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  block-size: 100%;
+}
+
+.App {
+  display: flex;
+  inline-size: 100%;
+  block-size: 100vh;
+  overflow: hidden;
+  padding: 16px;
+  box-sizing: border-box;
+  gap: 16px;
+}
+
+.CodeContainer {
+  flex: 1;
+  inline-size: 100%;
+  block-size: calc(100vh - 100px);
+  box-sizing: border-box;
+}
+
+.Container {
+  flex: 1;
+  inline-size: 100%;
+  block-size: calc(100vh - 100px);
+  box-sizing: border-box;
+}
+
+.ReactContainer {
+  flex: 1;
+  inline-size: 100%;
+  block-size: calc(100vh - 100px);
+  box-sizing: border-box;
+}
