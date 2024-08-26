@@ -28,7 +28,20 @@ function App() {
     <div className="App">
       <div className="Container">
         <h4>Chat interface</h4>
-        <Chat loading={loading}>
+        <Chat 
+          loading={loading}
+          onSubmit={(e) => console.log(e)}
+          onUserMessageUpdateRequest={(e) => console.log(e)}
+          onUserRegenerationRequest={(e) => console.log(e)}
+          onUserFeedbackRequest={(e) => console.log(e)}
+          onMessageElementSelected={(e) => console.log(e)}
+          onChatFullscreenChange={(e) => console.log(e)}
+          onChatDockingChange={(e) => console.log(e)}
+          onChatClosed={(e) => console.log(e)}
+          onHeaderMenuItemSelected={(e) => console.log(e)}
+          onUserStreamInterrupt={(e) => console.log(e)}
+          onMessageStreamingDone={(e) => console.log(e)}
+          onMessageElementTagSelected={(e) => console.log(e)}>
           <Messages slot="messages" user-name="User" agent-name="Watson">
             {conversation.map((message, index) => (
               <Message
