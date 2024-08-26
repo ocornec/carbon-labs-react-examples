@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@carbon-labs/ai-chat": "*",
+    "@carbon-labs/ai-chat": "^0.13.0-canary.272",
     "@lit/react": "^1.0.5",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
